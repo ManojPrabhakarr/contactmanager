@@ -4,7 +4,6 @@ var mongo = require('mongojs');
 var mongoConn = mongo('contactManager', ['contacts']);
 var fs = require('fs');
 var Schema = mongoose.Schema;
-var multer = require('multer');
 //var insert = require('./models/insert');
 
 module.exports = function(app) {
