@@ -1,4 +1,4 @@
-var Nerd = require('./models/nerd');
+var Nerd = require('./models/Nerd');
 var mongoose = require('mongoose');
 var mongo = require('mongojs');
 var mongoConn = mongo('contactManager', ['contacts']);
