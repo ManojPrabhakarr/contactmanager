@@ -1,0 +1,166 @@
+body { padding-top:30px; }
+.rightbutton{
+	float: right;
+}
+.contactsdiv{
+	height:40px;
+}
+.ng-scope .jumbotron{
+	min-height: 30px;
+}
+.whitebg{
+	background: #FFF;
+}
+/* custom inclusion of right, left and below tabs */
+
+.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+.clear {
+  clear: both;
+}
+
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  background: #eeeeee;
+}
+.circleedit {
+  height: 150px;
+  width: 150px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  background: #eeeeee;
+}
+.inlinecss{
+	display: inline;
+}
+.contactBox {
+  clear: both;
+  margin: 0 0 15px 0;
+  float: left;
+  padding: 15px;
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 8px;
+}
+.contactBox h3 {
+  color: #bd1717;
+  margin-top: 8px;
+  float: left;
+}
+.contactBox h6 {
+  color: #000;
+  font-weight: bold;
+}
+.contactBox .glyphicon {
+  padding: 5px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  color: #333;
+  float: right;
+  margin-top: 30px;
+}
+.contactBox .glyphicon-remove-circle {
+  background:  #fe0000 !important;
+  display: inline;
+  color: #fff;
+}
+.sidebar-offcanvas{
+  position: fixed;
+}
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile + label {
+    font-size: 1em;
+    font-weight: normal;
+    color: #bbb;
+    background-color: #FFF;
+    display: inline-block;
+    border: 1px solid #bbb;
+    padding: 4px;
+    margin: 10px auto;
+    width: 150px;
+    text-align: center;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #bbb;
+    color: #FFF;
+}
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+.aligncenter{
+  margin: 0 auto;
+    width: 150px;
+    border: 0px solid green;
+}
+.avatar{
+  height:100px;
+}
+.avatarsmall{
+  height: 60px;
+}

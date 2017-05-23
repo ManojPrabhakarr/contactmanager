@@ -1,0 +1,95 @@
+<div class="jumbotron">
+
+
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9 col-sm-push-3">
+          <div class="panel panel-default whitebg">
+          	<div class="panel-heading"><strong>Add Contact </strong></div>
+          		
+          			<form ng-submit="submit()" >
+          			<div class="panel-body">
+          			<div class="col-md-8">
+          				<div id="div_id_name" class="form-group required">
+				            	<label for="name" class="control-label col-md-4  requiredField">Name </label>
+				            <div class="controls col-md-8 ">
+				            	<input class="input-md  textinput textInput form-control" type="text" id="name" ng-model="insert.username" /> <br />
+				            </div>
+                        </div>
+				        <div id="div_id_company" class="form-group required">
+				            	<label for="comapany" class="control-label col-md-4  requiredField">Company </label>
+				            <div class="controls col-md-8 ">
+				            	<input class="input-md  textinput textInput form-control" type="text" id="comapany" ng-model="insert.company" /> <br />
+				            </div>
+                        </div>
+                        <div id="div_id_email" class="form-group required">
+				            	<label for="email" class="control-label col-md-4  requiredField">Email </label>
+				            <div class="controls col-md-8 ">
+				            	<input class="input-md  textinput textInput form-control" type="text" id="email" ng-model="insert.email" /> <br />
+				            </div>
+                        </div>
+                        <div id="div_id_phone" class="form-group required">
+				            	<label for="phone" class="control-label col-md-4  requiredField">Phone </label>
+				            <div class="controls col-md-8 ">
+				            	<input class="input-md  textinput textInput form-control" type="text" id="phone" ng-model="insert.phone" /> <br />
+				            </div>
+                        </div>
+                        <div id="div_id_address" class="form-group required">
+				            	<label for="address" class="control-label col-md-4  requiredField">Address </label>
+				            <div class="controls col-md-8 ">
+				            	<textarea class="input-md  textinput textInput form-control" type="text" id="address" ng-model="insert.address"></textarea> <br />
+				            </div>
+                        </div>
+                        <div id="div_id_group" class="form-group required">
+				            	<label for="group" class="control-label col-md-4  requiredField">Group </label>
+				            <div class="controls col-md-8 ">
+				            	<select class="input-md  textinput textInput form-control" id="group" ng-model="insert.group">
+				            		<option value="others">Others</option>
+				                    <option value="family">Family</option>
+				                    <option value="friends">Friends</option>
+				                </select><br />
+				            </div>
+                        </div>
+          			</div>
+          			<div class="col-md-4">
+          				<div id="div_id_image" class="form-group required aligncenter">
+				            <div class="">
+				            	<span class="circleedit">
+					                <img src="images/avatar.png" class="avatar">
+					            </span>
+					            					            <label class="custom-file ">
+								  	<input type="file" name="file" id="file" class="inputfile" />
+									<label for="file">Choose photo</label>
+								</label>
+					        </div>
+					        <div class="controls ">
+
+				            </div>
+                        </div>
+          			</div>
+				    </div>
+          			<div class="clear"></div>
+          			<div class="panel-footer">
+          				<input class="btn btn-primary" type="submit" value="Save" />
+				        <input class="btn btn-danger" type="reset" ng-click="cancel()" value="Cancel" />
+          			</div>    
+				    </form>
+
+          </div>
+        </div><!--/.col-xs-12.col-sm-9-->
+        
+
+        <div class="col-xs-6 col-sm-3 col-sm-pull-9 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a href="/" class="list-group-item active">All Contacts <span class="badge">{{ allcontact }}</span></a>
+            <a href="/" class="list-group-item">Family <span class="badge">{{ familycontact }}</span></a>
+            <a href="/" class="list-group-item">Friends <span class="badge">{{ friendscontact }}</span></a>
+            <a href="/" class="list-group-item">Others <span class="badge">{{ othercontact }}</span></a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+
+    </div><!--/.container-->
+	
+</div>
